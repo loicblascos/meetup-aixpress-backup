@@ -1,6 +1,7 @@
 # Meetup AixPress - Backup
 
-Exemple de scripts bash pour sauvegarder et restaurer un site WordPress.
+Exemples de scripts bash pour sauvegarder et restaurer un site WordPress via Dropbox.
+Ces scripts sont des exemples et doivent être ajustés selon les besoins et la configuration du serveur.
 
 # Requirements
 
