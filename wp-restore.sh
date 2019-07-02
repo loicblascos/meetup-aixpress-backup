@@ -35,10 +35,9 @@ function get_backups() {
 
 # Lister les backups disponibles
 function select_backup() {
-    echo "========================================="
+	echo "========================================="
 	echo " Fichier(s) de restauration"
 	echo "========================================="
-
 
 	# Limiter le nombre de columnnes du select
 	COLUMNS=12

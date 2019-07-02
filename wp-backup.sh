@@ -24,7 +24,7 @@ fi
 
 # Exporter la base de données avec wp-cli
 function export() {
-    echo -ne "🔢  Exportation de la base de données..."
+	echo -ne "🔢  Exportation de la base de données..."
 	cd $WP_DIR && wp db export database.sql --allow-root > /dev/null
 
 	if [ -f ${WP_DIR}database.sql ]; then
@@ -55,7 +55,7 @@ function remove_backup() {
 
 # Archiver tous les fichiers de WP
 function compress() {
-    echo "🎁  Compression des fichiers WP..."
+	echo "🎁  Compression des fichiers WP..."
 	zip -r $BAK_FILE * .[^.]* 2>&1 | \
 	pv -lep -s $(ls -Rl1 $WP_DIR | \
 	egrep -c '^[-/]') > /dev/null
